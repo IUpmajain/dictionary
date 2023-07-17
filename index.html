@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictonary App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+       <audio id="sound"></audio>
+        
+        <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+            <div class="card bg-secondary-subtle" style="width: 40rem;">
+                <div class="card-body">
+                    <form class=" d-flex  justify-content-between">
+                        <input required type="text" class="form-control w-75 p-2" placeholder="Enter Word...." autocomplete="off">
+                        <button class="btn btn-danger rounded "><i class="bi bi-search"></i>Search</button>
+                    </form>
+                  
+                    <div class="Word d-flex mt-4">
+                        <h2 class="card-title fw-bold text-danger">Hello</h2>
+                        <button id="button" class="btn  border-0" onclick="playsound()"><i class="bi bi-volume-up-fill fs-4"></i></button>  
+                    </div>
+                    <div class="phons">
+                  <p id="phont" class="card-subtitle  fw-semibold fs-5 text-secondary">/hə'ləʊ/</p>
+                  <p id="cardtext" class="card-text  text-secondary fs-5 fw-semibold">Synonyms: greeting</p>
+                    </div>
+                    <div class="meaning">
+                        <p class="meaning1 fw-semibold">(noun) "Hello!" or an equivalent greeting.</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
